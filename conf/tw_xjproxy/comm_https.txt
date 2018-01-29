@@ -1,0 +1,38 @@
+    access_log             /home/logs/waf.log main json;
+    set                    $ruleid 0;
+    include                xjdeny/all.conf; 
+    location /
+    {
+        proxy_pass         http://houduan_qt80;
+        proxy_pass_header  X-Accel-Redirect;
+        proxy_set_header   X-Forwarded-Proto https;
+        proxy_redirect     http:// $scheme://;
+        include            proxy.conf;
+    }
+
+    error_page 500 502 504 @url;
+    location @url
+    {
+        proxy_pass         http://103.232.39.145:81;
+        proxy_pass_header  X-Accel-Redirect;
+        include            proxy.conf;
+    }
+
+    error_page 403 =404 /404.html;
+    location /404.html
+    {
+        root               /usr/local/openresty/nginx/html;
+        allow              all;
+    }
+
+    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|js|css|mp3|ttf|woff)$
+    {
+      rewrite ^/(.*)$   https://cdn.ciyff.org/1/$1 permanent;
+        access_log         /dev/null;
+    }
+
+    location ~ .*\.(tpl|svn|asp|aspx|jsp|do|mdb|zip|rar|htc)?$|/0.*
+    {
+        return             444;
+        access_log         /dev/null;
+    }

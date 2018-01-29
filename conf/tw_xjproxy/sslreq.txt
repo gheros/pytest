@@ -1,0 +1,4 @@
+    location ^~ /.well-known/acme-challenge/ {
+        access_log         /home/logs/ssl.log main;
+        root               html;
+    }

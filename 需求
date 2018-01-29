@@ -1,0 +1,62 @@
+http://incap.lebosys.com/incap.html
+ domain 变量
+
+
+查询
+site_id
+
+  站点 ip servicename
+
+1、客户名称 ok
+取某某的conf配置 完成
+    Client_Name
+2是否incap no
+
+3源代服务器名称  字段拼接即可
+
+4源服务器IP 可以取出 c["sites"][0]["ips"]
+
+5http总数      len(c。。。)
+
+6 https 总数   （+re.len..）
+7  	证书包含域名数
+8 证书签发日期   openssl x509 -startdate -noout -in   路径/usr/local/openresty/nginx/conf/web/文件名 (文件名与)
+9证书到期日期
+10 	证书剩余天数
+11 site_name       c["sites"][0]["domian"]
+12 site_id  取出值        c["sites"][0]["site_id"]
+13 incap_cname 取出值   c["sites"][0]["dns"][0]["set_data_to"]
+
+
+
+
+再取80端口的所有域名，并统计个数
+2、Http_Count
+    再取一个的域名（一级域名），计算个数
+2、Https_Count
+    凡包含include   tw_xjproxy/comm_http.txt;的80端口的配置，将其域名取出统计个数
+
+
+证书首域名
+    ssl_certificate
+
+
+
+site_id 在json文件中）-request请求中
+
+incap_cname 再json文件中-request请求中
+   "set_data_to":[
+                        "482oxd4.x.incapdns.net"
+
+ip
+ "ips":[
+                "204.128.57.106"
+            ],
+
+
+incap是否启动
+     ping -c 1 ${Old_Cname} | grep incapdns.net > /dev/null && Location="YES" || Location="<font color='red'>NO</font>"
+
+
+
+xjxw1jbak.conf

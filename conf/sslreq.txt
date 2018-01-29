@@ -1,0 +1,5 @@
+    location ^~ /.well-known/acme-challenge/ {
+        access_log         /home/logs/ssl.log main;
+       # root               html;
+       proxy_pass http://27.98.206.232;
+    }

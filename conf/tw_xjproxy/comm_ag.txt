@@ -1,0 +1,28 @@
+    access_log             /home/logs/waf.log main json;
+    set                    $ruleid 0;
+    location /
+    {
+        proxy_pass         https://houduan_ht443;
+        proxy_pass_header  X-Accel-Redirect;
+        include            proxy.conf;
+    }
+
+    error_page 500 502 504 @url;
+    location @url
+    {
+        proxy_pass         http://103.232.39.145:81;
+        proxy_pass_header  X-Accel-Redirect;
+        include            proxy.conf;
+    }
+
+    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
+    {
+        rewrite ^/(.*)$    https://cdn.ciyff.org/2/$1 permanent;
+        access_log         /dev/null;
+    }
+
+    location ~ .*\.(tpl|svn|asp|aspx|jsp|do|mdb|zip|rar|htc)?$|/0.*
+    {
+        return             444;
+        access_log         /dev/null;
+    }

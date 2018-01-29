@@ -1,0 +1,130 @@
+#我是
+ #
+server {
+    listen                 80;
+    server_name            5597766.net www.5597766.net;
+    location / {
+        rewrite ^/(.*)$    https://8888897.net/?Intr=42036632     permanent;
+    }
+    include                sslreq.txt;
+    access_log             /dev/null;
+}
+
+server {
+    listen                 80;
+    server_name            wb88.com www.wb88.com hm77777.com hm88888.com www.hm77777.com www.hm88888.com 917hm.com  www.917hm.com hmdl.co www.hmdl.co xn--9iqy04an2ug06a.com xn--kxya086yba.com xn--z1xp7ae9c563adlt.com www.xn--9iqy04an2ug06a.com www.xn--kxya086yba.com www.xn--z1xp7ae9c563adlt.com xn--fjq20t9oc946bzr1b.cc xn--fjq20t9oc946bzr1b.net www.xn--fjq20t9oc946bzr1b.cc www.xn--fjq20t9oc946bzr1b.net hmvip09.com www.hmvip09.com 917668815.com917668806.com 917668816.com 917668817.com 917668818.com 917668819.com 917668820.com ww.917668816.com ww.917668817.com ww.917668818.com ww.917668819.com ww.917668820.com 00309.com  www.00309.com 177.ag 917.ag www.177.ag www.917.ag ww.917668821.com ww.917668822.com ww.917668823.com ww.917668824.com ww.917668825.com www.ww.917668821.com www.ww.917668822.com www.ww.917668823.com www.ww.917668824.com www.ww.917668825.com ww.917668826.com ww.917668827.com ww.917668828.com ww.917668829.com ww.917668830.com ww.917668831.com ww.917668832.com ww.917668834.com ww.917668833.com ww.917668835.com hm806.com www.hm806.com 917668836.com 917668837.com 917668838.com 917668839.com 917668840.com www.917668836.com www.917668837.com www.917668838.com www.917668839.com www.917668840.com 917668841.com 917668842.com 917668843.com 917668844.com 917668845.com 917668846.com 917668847.com 917668848.com 917668849.com 917668850.com www.917668841.com www.917668842.com www.917668843.com www.917668844.com www.917668845.com www.917668846.com www.917668847.com www.917668848.com www.917668849.com www.917668850.com 8888870.net 8888895.net www.8888870.net www.8888895.net hm534.com www.hm534.com hm514.com www.hm514.com 917668853.com 917668854.com 917668855.com www.917668853.com www.917668854.com www.917668855.com 5597777.net 5597788.net 5597799.net 5597700.net www.5597777.net www.5597788.net www.5597799.net www.5597700.net;
+    include                xjdeny/hm.conf;
+    include                tw_xjproxy/comm_http.txt;
+### 单独维护时上面1行添加#注释掉，下面8行删除#取消注释
+#    location  / {
+#        proxy_pass         http://103.232.39.145:81/single.php?time=2017-07-03%2018:20:00%20~%202017-07-04%2012:00:00;
+#        include            proxy.conf;
+#    }
+#    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|js|css|mp3|ttf|woff)$ {
+#        rewrite ^/(.*)$    https://cdn.ciyff.org/1/$1 permanent;
+#        access_log         /dev/null;
+#    }
+}
+
+############################     http --> https       ##################################
+
+server {
+    listen                 80;
+    server_name            03007.com 110025.net 110026.net 110027.net 110056.net 110059.net 110079.net 110085.net 110089.net 110095.net 110096.net 520hm520.com 520huangma.com 67879.com 68hm.cc 68hm.co 68hm.net 8888807.net 8888809.net 8888810.net 8888816.net 8888817.net 8888821.net 8888827.net 8888835.net 8888865.net 8888869.net 8888876.net 8888879.net 8888891.net 8888892.net 8888893.net 8888896.net 8888897.net 88wp.cc 917hm.cc 917hm.net h000000.com h111111.com h555555.com hm00000.com hm011.com hm022.com hm033.com hm11111.com hm1314520.com hm22222.com hm33333.com hm44444.com hm520hm.com hm537.com hm55555.com hm99999.com hmdh.cc hmdl.info hmdl.net hmgj02.com hmgj03.com hmgj04.com hmgj05.com hmgj06.com hmgj07.com hmgj08.com hmgj11.com hmgj12.com hmgj13.com hmgj14.com hmgj15.com hmgj16.com hmgj17.com hmgj18.com hmgj19.com hmgj20.com hmvip00.com hmvip01.com hmvip02.com hmvip03.com hmvip04.com hmvip05.com hmvip06.com hmvip07.com hmvip08.com hmvip10.com hmvip11.com hmvip44.com hmvip55.com hmvip66.com  hmvip88.com hmvip.cc hmvip.co hmvip.info huangma00.com huangma01.com huangma02.com huangma03.com huangma04.com huangma05.com huangma06.com huangma07.com huangma08.com huangma09.com huangma10.com huangma11.com huangma22.com huangma44.com huangma520.com huangma55.com huangma66.com m111111.com m222222.com m333333.com m444444.com m555555.com ma0001.com ma0002.com ma0005.com ma0006.com ma0007.com ma0008.com ma0009.com ma1222.com ma1333.com ma1444.com ma1555.com ma1666.com ma1777.com ma1888.com ma1999.com ma2111.com ma2222.com ma2333.com ma2444.com ma2777.com ma2888.com ma2999.com ma3333.com ma3444.com ma3555.com  ma3777.com ma3888.com ma3999.com ma4222.com ma4333.com ma4444.com ma4555.com ma4666.com ma4777.com ma4888.com ma4999.com ma520.net wp88.cc wp88.com xn--6oqz47gw2x.com xn--fjq20t9oc946bzr1b.cn xn--fjq54sjfk6ii22cc22btcg.com xn--fjq54sjfk6ii22cc22btcg.net xn--kxys97e.net xn--vcsv74etyvpqd.net www.03007.com www.110025.net www.110026.net www.110027.net www.110056.net www.110059.net www.110079.net www.110085.net www.110089.net www.110095.net www.110096.net www.520hm520.com www.520huangma.com www-5577.com www-5588.com www-5599.com www.67879.com www-68h.com www.68hm.cc www.68hm.co www.68hm.net www.8888807.net www.8888809.net www.8888810.net www.8888816.net www.8888817.net www.8888821.net www.8888827.net www.8888835.net www.8888865.net www.8888869.net www.8888876.net www.8888879.net www.8888891.net www.8888892.net www.8888893.net www.8888896.net www.8888897.net www.88wp.cc www.917hm.cc www.917hm.net www.h000000.com www.h111111.com www.h555555.com www.hm00000.com www.hm011.com www.hm022.com www.hm033.com www.hm11111.com www.hm1314520.com www.hm22222.com www.hm33333.com www.hm44444.com www.hm520hm.com www.hm537.com www.hm55555.com www.hm99999.com www.hmdh.cc www.hmdl.info www.hmdl.net www.hmgj02.com www.hmgj03.com www.hmgj04.com www.hmgj05.com www.hmgj06.com www.hmgj07.com www.hmgj08.com www.hmgj11.com www.hmgj12.com www.hmgj13.com www.hmgj14.com www.hmgj15.com www.hmgj16.com www.hmgj17.com www.hmgj18.com www.hmgj19.com www.hmgj20.com www.hmvip00.com www.hmvip01.com www.hmvip02.com www.hmvip03.com www.hmvip04.com www.hmvip05.com www.hmvip06.com www.hmvip07.com www.hmvip08.com www.hmvip10.com www.hmvip11.com www.hmvip44.com www.hmvip55.com www.hmvip66.com  www.hmvip88.com www.hmvip.cc www.hmvip.co www.hmvip.info www.huangma00.com www.huangma01.com www.huangma02.com www.huangma03.com www.huangma04.com www.huangma05.com www.huangma06.com www.huangma07.com www.huangma08.com www.huangma09.com www.huangma10.com www.huangma11.com www.huangma22.com www.huangma44.com www.huangma520.com www.huangma55.com www.huangma66.com www.m111111.com www.m222222.com www.m333333.com www.m444444.com www.m555555.com www.ma0001.com www.ma0002.com www.ma0005.com www.ma0006.com www.ma0007.com www.ma0008.com www.ma0009.com www.ma1222.com www.ma1333.com www.ma1444.com www.ma1555.com www.ma1666.com www.ma1777.com www.ma1888.com www.ma1999.com www.ma2111.com www.ma2222.com www.ma2333.com www.ma2444.com www.ma2777.com www.ma2888.com www.ma2999.com www.ma3333.com www.ma3444.com www.ma3555.com  www.ma3777.com www.ma3888.com www.ma3999.com www.ma4222.com www.ma4333.com www.ma4444.com www.ma4555.com www.ma4666.com www.ma4777.com www.ma4888.com www.ma4999.com www.ma520.net www.wp88.cc www.wp88.com www.www-5577.com www.www-5588.com www.www-5599.com www.www-68h.com www.xn--6oqz47gw2x.com www.xn--fjq20t9oc946bzr1b.cn www.xn--fjq54sjfk6ii22cc22btcg.com www.xn--fjq54sjfk6ii22cc22btcg.net www.xn--kxys97e.net www.xn--vcsv74etyvpqd.net hm801.com hm802.com hm803.com hm804.com hm805.com www.hm801.com www.hm802.com www.hm803.com www.hm804.com www.hm805.com;
+    location / {
+        rewrite ^(.*)$     https://$host$1 permanent;
+    }
+    include                sslreq.txt;
+    access_log             /dev/null;
+}
+
+############################     https        ##################################
+
+server {
+    listen                 443 ssl;
+    server_name            huangma01.com 8888807.net 8888809.net 8888810.net 8888816.net 8888817.net 8888821.net hmvip05.com hmvip06.com hmvip07.com hmvip11.com hmvip44.com hmvip55.com hmvip66.com  hmvip88.com huangma02.com huangma03.com huangma06.com huangma07.com huangma08.com huangma10.com huangma520.com m111111.com m222222.com m333333.com m444444.com m555555.com ma0001.com ma0002.com ma0005.com ma0006.com ma0007.com ma0008.com ma0009.com ma1222.com ma1444.com ma2444.com ma3444.com ma4777.com ma520.net www-5577.com www-5588.com www-5599.com www-68h.com xn--6oqz47gw2x.com xn--fjq20t9oc946bzr1b.cn xn--fjq54sjfk6ii22cc22btcg.com xn--fjq54sjfk6ii22cc22btcg.net xn--vcsv74etyvpqd.net www.8888807.net www.8888809.net www.8888810.net www.8888816.net www.8888817.net www.8888821.net www.huangma01.com www.hmvip05.com www.hmvip06.com www.hmvip07.com www.hmvip11.com www.hmvip44.com www.hmvip55.com www.hmvip66.com  www.hmvip88.com www.huangma02.com www.huangma03.com www.huangma06.com www.huangma07.com www.huangma08.com www.huangma10.com www.huangma520.com www.m111111.com www.m222222.com www.m333333.com www.m444444.com www.m555555.com www.ma0001.com www.ma0002.com www.ma0005.com www.ma0006.com www.ma0007.com www.ma0008.com www.ma0009.com www.ma1222.com www.ma1444.com www.ma2444.com www.ma3444.com www.ma4777.com www.ma520.net www.www-5577.com www.www-5588.com www.www-5599.com www.www-68h.com www.xn--6oqz47gw2x.com www.xn--fjq20t9oc946bzr1b.cn www.xn--fjq54sjfk6ii22cc22btcg.com www.xn--fjq54sjfk6ii22cc22btcg.net www.xn--vcsv74etyvpqd.net;
+    ssl_certificate        web/huangma01.com.crt;
+    ssl_certificate_key    web/huangma01.com.key;
+    include                xjdeny/hm.conf;
+    include                tw_xjproxy/comm_https.txt;
+### 单独维护时上面1行添加#注释掉，下面8行删除#取消注释
+#    location  / {
+#        proxy_pass         http://103.232.39.145:81/single.php?time=2017-07-03%2018:20:00%20~%202017-07-04%2012:00:00;
+#        include            proxy.conf;
+#    }
+#    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|js|css|mp3|ttf|woff)$ {
+#        rewrite ^/(.*)$    https://cdn.ciyff.org/1/$1 permanent;
+#        access_log         /dev/null;
+#    }
+}
+
+server {
+    listen                 443 ssl;
+    server_name            wp88.com huangma09.com hmgj12.com hmgj14.com hmgj15.com hmgj16.com hmgj17.com hmgj03.com hmgj06.com hmgj08.com hmvip.cc ma1777.com ma2111.com ma2222.com ma2333.com hm22222.com huangma04.com 917hm.cc ma2888.com 917hm.net h111111.com hm11111.com hm33333.com hm44444.com huangma22.com huangma00.com huangma11.com huangma44.com huangma55.com huangma66.com hm033.com 186.ag hmvip08.com hmvip10.com 67879.com hmgj02.com hmgj04.com hmgj05.com hmgj07.com hmgj11.com hmgj13.com hmgj18.com hmgj19.com hmgj20.com ma1333.com ma1555.com ma1666.com ma1888.com ma1999.com ma2777.com www.wp88.com www.huangma09.com www.hmgj12.com www.hmgj14.com www.hmgj15.com www.hmgj16.com www.hmgj17.com www.hmgj03.com www.hmgj06.com www.hmgj08.com www.hmvip.cc www.ma1777.com www.ma2111.com www.ma2222.com www.ma2333.com www.hm22222.com www.huangma04.com www.917hm.cc www.ma2888.com www.917hm.net www.h111111.com www.hm11111.com www.hm33333.com www.hm44444.com www.huangma22.com www.huangma00.com www.huangma11.com www.huangma44.com www.huangma55.com www.huangma66.com www.hm033.com www.186.ag www.hmvip08.com www.hmvip10.com www.67879.com www.hmgj02.com www.hmgj04.com www.hmgj05.com www.hmgj07.com www.hmgj11.com www.hmgj13.com www.hmgj18.com www.hmgj19.com www.hmgj20.com www.ma1333.com www.ma1555.com www.ma1666.com www.ma1888.com www.ma1999.com www.ma2777.com;
+    ssl_certificate        web/wp88.com.crt;
+    ssl_certificate_key    web/wp88.com.key;
+    include                xjdeny/hm.conf;
+    include                tw_xjproxy/comm_https.txt;
+### 单独维护时上面1行添加#注释掉，下面8行删除#取消注释
+#    location  / {
+#        proxy_pass         http://103.232.39.145:81/single.php?time=2017-07-03%2018:20:00%20~%202017-07-04%2012:00:00;
+#        include            proxy.conf;
+#    }
+#    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|js|css|mp3|ttf|woff)$ {
+#        rewrite ^/(.*)$    https://cdn.ciyff.org/1/$1 permanent;
+#        access_log         /dev/null;
+#    }
+}
+
+server {
+    listen                 443 ssl;
+    server_name            68hm.net ma2999.com ma3333.com ma3555.com ma3777.com ma3888.com ma3999.com ma4222.com ma4333.com ma4444.com ma4555.com ma4666.com ma4888.com ma4999.com 110025.net 110027.net 110059.net 110089.net 110085.net 110096.net 110026.net 110079.net 110056.net 110095.net 03007.com 520hm520.com 520huangma.com 68hm.cc 68hm.co 88wp.cc h000000.com h555555.com hm00000.com hm011.com hm022.com hm1314520.com hm520hm.com hm55555.com hm99999.com hmdh.cc hmdl.info hmdl.net hmvip.co hmvip.info hmvip00.com hmvip01.com hmvip02.com hmvip03.com hmvip04.com www.68hm.net www.ma2999.com www.ma3333.com www.ma3555.com www.ma3777.com www.ma3888.com www.ma3999.com www.ma4222.com www.ma4333.com www.ma4444.com www.ma4555.com www.ma4666.com www.ma4888.com www.ma4999.com www.110025.net www.110027.net www.110059.net www.110089.net www.110085.net www.110096.net www.110026.net www.110079.net www.110056.net www.110095.net www.03007.com www.520hm520.com www.520huangma.com www.68hm.cc www.68hm.co www.88wp.cc www.h000000.com www.h555555.com www.hm00000.com www.hm011.com www.hm022.com www.hm1314520.com www.hm520hm.com www.hm55555.com www.hm99999.com www.hmdh.cc www.hmdl.info www.hmdl.net www.hmvip.co www.hmvip.info www.hmvip00.com www.hmvip01.com www.hmvip02.com www.hmvip03.com www.hmvip04.com;
+    ssl_certificate        web/68hm.net.crt;
+    ssl_certificate_key    web/68hm.net.key;
+    include                xjdeny/hm.conf;
+    include                tw_xjproxy/comm_https.txt;
+### 单独维护时上面1行添加#注释掉，下面8行删除#取消注释
+#    location  / {
+#        proxy_pass         http://103.232.39.145:81/single.php?time=2017-07-03%2018:20:00%20~%202017-07-04%2012:00:00;
+#        include            proxy.conf;
+#    }
+#    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|js|css|mp3|ttf|woff)$ {
+#        rewrite ^/(.*)$    https://cdn.ciyff.org/1/$1 permanent;
+#        access_log         /dev/null;
+#    }
+}
+
+server {
+    listen                 443 ssl;
+    server_name            wp88.cc 8888827.net 8888835.net 8888865.net 8888869.net 8888875.net 8888876.net 8888879.net 8888891.net 8888892.net 8888893.net 8888896.net hm537.com 8888897.net www.wp88.cc www.8888827.net www.8888835.net www.8888865.net www.8888869.net www.8888875.net www.8888876.net www.8888879.net www.8888891.net www.8888892.net www.8888893.net www.8888896.net www.8888897.net www.hm537.com hm801.com hm802.com hm803.com hm804.com hm805.com www.hm801.com www.hm802.com www.hm803.com www.hm804.com www.hm805.com;
+    ssl_certificate        web/wp88.cc.crt;
+    ssl_certificate_key    web/wp88.cc.key;
+    include                xjdeny/hm.conf;
+    include                tw_xjproxy/comm_https.txt;
+### 单独维护时上面1行添加#注释掉，下面8行删除#取消注释
+#    location  / {
+#        proxy_pass         http://103.232.39.145:81/single.php?time=2017-07-03%2018:20:00%20~%202017-07-04%2012:00:00;
+#        include            proxy.conf;
+#    }
+#    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|js|css|mp3|ttf|woff)$ {
+#        rewrite ^/(.*)$    https://cdn.ciyff.org/1/$1 permanent;
+#        access_log         /dev/null;
+#    }
+}
+
+############################     ag        ##################################
+
+server {
+    listen                 443 ssl;
+    server_name            ag.wp88.com ag.huangma09.com ag.hmgj12.com ag.hmgj14.com ag.hmgj15.com ag.hmgj16.com ag.hmgj17.com ag.hmgj03.com ag.hmgj06.com ag.hmgj08.com ag.hmvip.cc ag.ma1777.com ag.ma2111.com ag.ma2222.com ag.ma2333.com ag.hm22222.com ag.huangma04.com ag.917hm.cc ag.ma2888.com ag.917hm.net ag.h111111.com ag.hm11111.com ag.hm33333.com ag.hm44444.com ag.huangma22.com ag.huangma00.com ag.huangma11.com ag.huangma44.com ag.huangma55.com ag.huangma66.com ag.hm033.com ag.186.ag ag.hmvip08.com ag.hmvip10.com ag.67879.com ag.hmgj02.com ag.hmgj04.com ag.hmgj05.com ag.hmgj07.com ag.hmgj11.com ag.hmgj13.com ag.hmgj18.com ag.hmgj19.com ag.hmgj20.com ag.ma1333.com ag.ma1555.com ag.ma1666.com ag.ma1888.com ag.ma1999.com ag.ma2777.com ag.68hm.net ag.ma2999.com ag.ma3333.com ag.ma3555.com ag.ma3666.com ag.ma3777.com ag.ma3888.com ag.ma3999.com ag.ma4222.com ag.ma4333.com ag.ma4444.com ag.ma4555.com ag.ma4666.com ag.ma4888.com ag.ma4999.com ag.110025.net ag.110027.net ag.110059.net ag.110089.net ag.110085.net ag.110096.net ag.110026.net ag.110079.net ag.110056.net ag.110095.net ag.03007.com ag.520hm520.com ag.520huangma.com ag.68hm.cc ag.68hm.co ag.88wp.cc ag.h000000.com ag.h555555.com ag.hm00000.com ag.hm011.com ag.hm022.com ag.hm1314520.com ag.hm520hm.com ag.hm55555.com ag.hm99999.com ag.hmdh.cc ag.hmdl.info ag.hmdl.net ag.hmvip.co ag.hmvip.info ag.hmvip00.com ag.hmvip01.com ag.hmvip02.com ag.hmvip03.com ag.hmvip04.com;
+    ssl_certificate        web/ag.wp88.com.crt;
+    ssl_certificate_key    web/ag.wp88.com.key;
+    include                tw_xjproxy/comm_ag.txt;
+}
+
+server {
+    listen                 443 ssl;
+    server_name            ag.huangma01.com ag.8888807.net ag.8888809.net ag.8888810.net ag.8888816.net ag.8888817.net ag.8888821.net ag.hmvip05.com ag.hmvip06.com ag.hmvip07.com ag.hmvip11.com ag.hmvip44.com ag.hmvip55.com ag.hmvip66.com  ag.hmvip88.com ag.huangma02.com ag.huangma03.com ag.huangma06.com ag.huangma07.com ag.huangma08.com ag.huangma10.com ag.huangma520.com ag.m111111.com ag.m222222.com ag.m333333.com ag.m444444.com ag.m555555.com ag.ma0001.com ag.ma0002.com ag.ma0005.com ag.ma0006.com ag.ma0007.com ag.ma0008.com ag.ma0009.com ag.ma1222.com ag.ma1444.com ag.ma2444.com ag.ma3444.com ag.ma4777.com ag.ma520.net ag.www-5577.com ag.www-5588.com ag.www-5599.com ag.www-68h.com ag.xn--6oqz47gw2x.com ag.xn--fjq20t9oc946bzr1b.cn ag.xn--fjq54sjfk6ii22cc22btcg.com ag.xn--fjq54sjfk6ii22cc22btcg.net ag.xn--vcsv74etyvpqd.net ag.wp88.cc ag.8888827.net ag.8888835.net ag.8888865.net ag.8888869.net ag.8888875.net ag.8888876.net ag.8888879.net ag.8888891.net ag.8888892.net ag.8888893.net ag.8888896.net ag.8888897.net ag.hm801.com ag.hm802.com ag.hm803.com ag.hm804.com ag.hm805.com;
+    ssl_certificate        web/ag.huangma01.com.crt;
+    ssl_certificate_key    web/ag.huangma01.com.key;
+    include                tw_xjproxy/comm_ag.txt;
